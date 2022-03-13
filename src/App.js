@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import Login from "./Login";
 import Order from "./Order";
 import Account from "./Account";
+import About from "./About";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="orders" element={<Order />} /> 
       <Route path="account" element={<Account />} /> 
       <Route path="checkout" element={<Checkout />} /> 
+      <Route path="about" element={<About /> } />
     </Routes>  
      {/* Single Widget  */}
     <Footer /> 

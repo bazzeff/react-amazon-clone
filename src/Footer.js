@@ -1,18 +1,24 @@
 import React from 'react'
-import { Link } from "react-router-dom";
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import InstagramIcon from '@material-ui/icons/Instagram'
+import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import About from "./components/layout/about/About";
 
 const Footer = () => {
-  return (
+
+  return (  
+    <div className="app">
+    <BrowserRouter>
+
+<Routes>
+<Route path="about" element={<About /> } />
+</Routes> 
+    </BrowserRouter>
     <footer class="text-center lg:text-left bg-yellow-200 text-yellow-600">
   <div class="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
     <div class="mr-12 hidden lg:block">
       <span>Get connected with us on social networks:</span>
     </div>
     <div class="flex justify-center">
-      <a href="https://facebook.com" target="_blank" class="mr-6 text-gray-600">
+      <a href="https://facebook.com" class="mr-6 text-gray-600">
         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
           class="w-2.5" role="img" xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 320 512">
@@ -21,7 +27,7 @@ const Footer = () => {
           </path>
         </svg>
       </a>
-      <a href="https://twitter.com" target="_blank" class="mr-6 text-gray-600">
+      <a href="https://twitter.com" class="mr-6 text-gray-600">
         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
           class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
           <path fill="currentColor"
@@ -154,7 +160,7 @@ const Footer = () => {
               d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
             </path>
           </svg>
-          info@realbalckmarket.com
+          info@realblackmarket.com
         </p>
         <p class="flex items-center justify-center md:justify-start mb-4">
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone"
@@ -184,6 +190,7 @@ const Footer = () => {
     <Link class="text-gray-600 font-semibold" to="/">Real Black Market -  All Rights Reserved</Link>
   </div>
 </footer>
+</div> 
   )
 }
 
