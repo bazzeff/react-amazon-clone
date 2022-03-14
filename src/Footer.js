@@ -1,17 +1,10 @@
 import React from 'react'
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
-import About from "./components/layout/about/About";
+import { Link } from "react-router-dom"; 
 
 const Footer = () => {
 
   return (  
-    <div className="app">
-    <BrowserRouter>
-
-<Routes>
-<Route path="about" element={<About /> } />
-</Routes> 
-    </BrowserRouter>
+    <div className="app"> 
     <footer class="text-center lg:text-left bg-yellow-200 text-yellow-600">
   <div class="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
     <div class="mr-12 hidden lg:block">

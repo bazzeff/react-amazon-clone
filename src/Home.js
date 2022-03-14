@@ -61,6 +61,16 @@ function Home() {
           />
         </div>
       </div>
+      <div> review</div>
+      <div>Trending</div>
+      <div>hot item</div>
+      <div>start now</div>
+      <div>On sale</div>
+      <div>best seller</div>
+      <div>top view</div>
+      <div>Blog</div>
+      <div>shipping banner</div>
+      <div>subscribe newsletter</div>
     </div>
   );
 }
