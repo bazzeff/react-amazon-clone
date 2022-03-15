@@ -1,7 +1,11 @@
 import React from "react";
 import Product from "./Product";
+import Header from "./Header";
+
 function Home() {
   return (
+  <div>
+  <Header />
     <div className="home">
       <div className="home__container">
         <img
@@ -72,6 +76,8 @@ function Home() {
       <div>shipping banner</div>
       <div>subscribe newsletter</div>
     </div>
+
+</div>
   );
 }
 

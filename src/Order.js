@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from "./Header";
 
 const Order = () => {
   return (
-    <div>Order</div>
+    <div>
+    <Header />
+    Order</div>
   )
 }
 
