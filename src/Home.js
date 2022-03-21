@@ -1,6 +1,7 @@
 import React from "react";
 import Product from "./Product";
 import Header from "./Header";
+import Trending from "./Trending";
 
 function Home() {
   return (
@@ -65,8 +66,12 @@ function Home() {
           />
         </div>
       </div>
-      <div> review</div>
-      <div>Trending</div>
+      <div> 
+      
+      </div>
+      <div>
+      <Trending />
+       </div>
       <div>hot item</div>
       <div>start now</div>
       <div>On sale</div>

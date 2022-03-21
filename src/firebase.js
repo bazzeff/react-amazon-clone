@@ -1,24 +1,34 @@
 //import firebase from "firebase"; 
-import { initializeApp } from "firebase/app";
-//import { getFirestore } from 'firebase/firestore/lite';
-import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword,GoogleAuthProvider,signInWithPopup,sendPasswordResetEmail,signOut,OAuthProvider,FacebookAuthProvider,TwitterAuthProvider } from "firebase/auth";
-  import {
-    getFirestore,
-    query,
-    getDocs,
-    collection,
-    where,
-    addDoc,
-  } from "firebase/firestore"; 
+import { initializeApp } from "firebase/app"; 
+import { 
+  getAuth, 
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
+  sendPasswordResetEmail,
+  signOut,OAuthProvider,
+  FacebookAuthProvider,
+  TwitterAuthProvider 
+} from "firebase/auth";
+import {
+  getFirestore,
+  query,
+  getDocs,
+  collection,
+  where,
+  addDoc,
+} from "firebase/firestore"; 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyAEpOKpocAs4HyyBMB1hgD3fQ8iVHSYJoo",
-    authDomain: "clone-459ef.firebaseapp.com",
-    projectId: "clone-459ef",
-    storageBucket: "clone-459ef.appspot.com",
-    messagingSenderId: "1036770956894",
-    appId: "1:1036770956894:web:aec8e2ed33bc9c3e9ac6cf",
-    measurementId: "G-6FE4R8KSYG"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
   };
 
 

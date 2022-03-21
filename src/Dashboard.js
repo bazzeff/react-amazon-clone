@@ -4,9 +4,11 @@ import { useNavigate } from "react-router-dom";
 import "./Dashboard.css";
 import { auth, db, logout } from "./firebase";
 import { query, collection, getDocs, where } from "firebase/firestore";
+import SideBar from "./components/menu/SideBar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function Dashboard() {
-  const [user, loading, error] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
   const [name, setName] = useState("");
   const navigate = useNavigate();
 
@@ -31,6 +33,8 @@ function Dashboard() {
   }, [user, loading]);
 
   return (
+    <div>
+    <SideBar />  
     <div className="dashboard">
       <div className="dashboard__container">
         Logged in as
@@ -40,6 +44,7 @@ function Dashboard() {
           Logout
         </button>
       </div>
+    </div>
     </div>
   );
 }
