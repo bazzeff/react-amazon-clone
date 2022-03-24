@@ -1,16 +1,18 @@
 import React from "react";
 import Product from "./Product";
-import Header from "./Header";
+import Header from './components/layout/header/Header'
 import Trending from "./Trending";
+import Banner from "./Banner";
+//import HorizontalMenu  from "./components/menu/HorizontalMenu"
 
 function Home() {
   return (
   <div>
-  <Header />
+  <Header /> 
     <div className="home">
       <div className="home__container">
         <img
-          className="home__image"
+          className="object-cover w-full h-96"
           src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
           alt=""
         />
@@ -68,18 +70,10 @@ function Home() {
       </div>
       <div> 
       
+      <Banner /> 
+        <Trending />
       </div>
-      <div>
-      <Trending />
-       </div>
-      <div>hot item</div>
-      <div>start now</div>
-      <div>On sale</div>
-      <div>best seller</div>
-      <div>top view</div>
-      <div>Blog</div>
-      <div>shipping banner</div>
-      <div>subscribe newsletter</div>
+     
     </div>
 
 </div>

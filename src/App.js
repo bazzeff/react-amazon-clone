@@ -11,13 +11,19 @@ import About from "./About";
 import Faq from "./components/layout/faq/Faq";
 import Terms from "./components/layout/terms/Terms";
 import Contact from "./components/layout/contact/Contact";
-import Help from "./components/layout/help/Help";
-import Header from "./Header";
+import Help from "./components/layout/help/Help"; 
 import Dashboard from "./Dashboard";
 import Reset from "./Reset";
 import Register from "./Register";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
+import AddProduct from "./AddProduct";
+//import HotItem from "./HotItem";
+//import StartNow from "./StartNow";
+//import OnSale from "./OnSale";
+//import BestSeller from "./BestSeller";
+//import TopViewed from "./TopViewed";
+//import Newsletter from "./Newsletter";
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -66,6 +72,7 @@ function App() {
       <Route exact path="/register" element={<Register />} />
       <Route exact path="/reset" element={<Reset />} />
       <Route exact path="/dashboard" element={<Dashboard />} />
+      <Route exact path="/addproduct" element={<AddProduct />} />
     </Routes>  
      {/* Single Widget  */}
     <Footer /> 

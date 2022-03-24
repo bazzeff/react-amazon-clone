@@ -23,5 +23,13 @@ const products = [
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1583368224/phone-3_h2s6fo.png',
     amount: 1,
   },
+  {
+    id: 4,
+    title: 'New Apple iPad Pro',
+    price: 599.99,
+    img:
+      'https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg',
+    amount: 1,
+  },
 ];
 export default products;

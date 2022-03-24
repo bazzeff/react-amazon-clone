@@ -125,7 +125,12 @@ const firebaseConfig = {
   
   const logInWithEmailAndPassword = async (email, password) => {
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      const res =  await signInWithEmailAndPassword(auth, email, password);
+      const user = res.user;
+      await getDocs(collection(db, "users"), {
+        uid: user.uid, 
+        email,
+      });
     } catch (err) {
       console.error(err);
       alert(err.message);

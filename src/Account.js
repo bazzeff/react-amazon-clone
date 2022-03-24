@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Account.css"
-import Header from "./Header"; 
+import Header from './components/layout/header/Header'
 
 const Account = () => {
   return (

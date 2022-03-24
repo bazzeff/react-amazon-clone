@@ -54,7 +54,37 @@
 /*======================================
    End Most Popular CSS
 ========================================*/
+.trendings {
+	display: flex;
+	flex-wrap: wrap;
+}
+.trending-card {
+	padding: 2%;
+	flex-grow: 1;
+	flex-basis: 16%;
 
+  
+	display: flex; /* so child elements can use flexbox stuff too! */
+  }
+.trending-image {
+	max-width: 100%;
+}
+.trending-info {
+	margin-top: auto;
+}
+.trending > button {
+	background: #f0c14b;
+	border: 1px solid;
+	margin-top: 10px;
+	border-color: #a88734 #9c7e31 #846a29;
+	color: #111;
+  }
+
+  @media (max-width: 920px) {
+	.trending-card {
+	  flex: 1 21%;
+	}
+  }
 /*======================================
    Start Single Product CSS
 ========================================*/
