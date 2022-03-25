@@ -3,30 +3,64 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import {
   auth,
+  db,
   registerWithEmailAndPassword,
   signInWithGoogle,
   signInWithFacebook,
   signInWithApple,
   signInWithTwitter,
 } from "./firebase";
+import { collection, addDoc} from "firebase/firestore"; 
 import "./Register.css";
 
 function Register() {
+  const [hasAccount, setHasAccount] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
   const [name, setName] = useState("");
   const [user, loading, error] = useAuthState(auth);
   const navigate = useNavigate();
 
   const register = () => {
     if (!name) alert("Please enter name");
-    registerWithEmailAndPassword(name, email, password);
+    if(password !== confirmPassword){
+      alert("Passwords don't match")
+      return;
+  }
+    registerWithEmailAndPassword(auth, email, password, name)
+    .then((userCredential) => {
+     // Signed in
+      setHasAccount(true) 
+      const user = userCredential.user; 
+      const docRef = addDoc(collection(db, "users"), {
+        owner_uid: user.uid,
+        displayName: name,
+        email: user.email,
+      }); 
+
+      // The user's ID, unique to the Firebase project. Do NOT use
+      // this value to authenticate with your backend server, if
+      // you have one. Use User.getToken() instead.
+      const uid = user.uid;
+    // ...
+    })
+    .catch((error) => {
+      setHasAccount(false)
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // ..
+    });
+
   };
 
   useEffect(() => {
     if (loading) return;
     if (user) navigate("/dashboard");
   }, [user, loading]);
+
 
   return (
     <div className="register">
@@ -42,6 +76,7 @@ function Register() {
         <input
           type="text"
           className="register__textBox"
+          name="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Full Name"
@@ -49,6 +84,7 @@ function Register() {
         <input
           type="text"
           className="register__textBox"
+          name="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="E-mail Address"
@@ -56,8 +92,17 @@ function Register() {
         <input
           type="password"
           className="register__textBox"
+          name="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          placeholder="Password"
+        />
+        <input
+          type="password"
+          className="register__textBox"
+          name="confirmPassword"
+          value={confirmPassword}
+          onChange={(e) => confirmPassword(e.target.value)}
           placeholder="Password"
         />
         <button className="register__btn" onClick={register}>

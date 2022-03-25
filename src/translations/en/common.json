@@ -1,0 +1,89 @@
+{
+    "welcome": {
+        "title": "Welcome to {{framework}}"
+    },
+    "agriculture": {
+        "title": "Agriculture",
+        "description": "Agriculture"
+    },
+    "mining": {
+        "title": "Mining",
+        "description": "Mining"
+    },
+    "utilities": {
+        "title": "Mining",
+        "description": "Mining"
+    },
+    "construction": {
+        "title": "construction",
+        "description": "construction"
+    },
+    "manufacturing":  {
+        "title": "manufacturing",
+        "description": "manufacturing"
+    },
+    "wholesaler": {
+        "title": "wholesaler",
+        "description": "wholesaler"
+    },
+    "retail-store": {
+        "title": "Retail Store",
+        "description": "retail-store"
+    },
+    "transportation": {
+        "title": "transportation",
+        "description": "transportation"
+    },
+    "information": {
+        "title": "information",
+        "description": "information"
+    },
+    "financial-services":  {
+        "title": "financial-services",
+        "description": "financial-services"
+    },
+    "real-estate": {
+        "title": "real-estate",
+        "description": "real-estate"
+    },
+    "professional": {
+        "title": "professional",
+        "description": "professional"
+    },
+    "enterprise": {
+        "title": "enterprise",
+        "description": "enterprise"
+    },
+    "schools": {
+        "title": "schools",
+        "description": "schools"
+    },
+    "administrative": {
+        "title": "administrative",
+        "description": "administrative"
+    },
+    "healthcare": {
+        "title": "Health Care",
+        "description": "Health Care"
+    },
+    "entertainment": {
+        "title": "entertainment",
+        "description": "entertainment"
+    },
+    "accommodation": {
+        "title": "accommodation",
+        "description": "accommodation"
+    },
+    "other-services": {
+        "title": "other-services",
+        "description": "other-services"
+    },
+    "agencies":{
+        "title": "agencies",
+        "description": "agencies"
+    },
+    "career": {
+        "title": "Careers",
+        "description": "career"
+    }
+}

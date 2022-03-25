@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "clone-459ef"
-  }
+    "default": "clone-459ef",
+    "staging": "clone-459ef"
+  },
+  "targets": {}
 }

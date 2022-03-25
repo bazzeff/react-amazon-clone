@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app"; 
 import { 
   getAuth, 
+  onAuthStateChanged,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   GoogleAuthProvider,
@@ -133,7 +134,7 @@ const firebaseConfig = {
       });
     } catch (err) {
       console.error(err);
-      alert(err.message);
+      alert(err.message); 
     }
   };
   
@@ -166,10 +167,24 @@ const firebaseConfig = {
   const logout = () => {
     signOut(auth);
   };
-  
+   const authListener = () => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        // User is signed in, see docs for a list of available properties
+        // https://firebase.google.com/docs/reference/js/firebase.User
+        const uid = user.uid;
+        // ...
+      } else {
+        // User is signed out
+        // ...
+      }
+    });
+   }
   export {
     auth,
     db,
+    signInWithPopup,
+    authListener,
     signInWithGoogle,
     logInWithEmailAndPassword,
     registerWithEmailAndPassword,

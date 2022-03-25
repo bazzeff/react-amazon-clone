@@ -6,7 +6,15 @@ import { auth, logInWithEmailAndPassword, signInWithGoogle,
     signInWithApple,
     signInWithTwitter, } from "./firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
+import {useTranslation} from "react-i18next";
 
+function HeaderComponent()
+{
+    const [t, i18n] = useTranslation('common');
+    return <div>
+        <h1>{t('welcome.title', {framework:'React'})}</h1> 
+    </div>
+}
 function Login() {
     //const auth = getAuth();
     const navigate = useNavigate();
@@ -24,7 +32,7 @@ function Login() {
 
     return (
         <div className='login'>
-
+               <HeaderComponent />
             <div className='login__container'>
             <Link to='/'>
                 <img
