@@ -8379,6 +8379,15 @@
     "@babel/runtime" ">=7.0.0-beta.56"
     "prop-types" "^15.6.2"
 
+"react-tag-slider@^1.0.8":
+  "integrity" "sha512-Ji+E4q5QtwBFPPhGnmp79OnQQsU1ije4zkKq5dS/7Ro/U7kzvrjBh5UWZQFSvkPBCB2byMx9tkHi4LbZFwn15w=="
+  "resolved" "https://registry.npmjs.org/react-tag-slider/-/react-tag-slider-1.0.8.tgz"
+  "version" "1.0.8"
+  dependencies:
+    "prop-types" "^15.7.2"
+    "react" "^17.0.2"
+    "react-dom" "^17.0.2"
+
 "react-transition-group@^4.4.0", "react-transition-group@^4.4.2":
   "integrity" "sha512-/RNYfRAMlZwDSr6z4zNKV6xu53/e2BuaBbGhbyYIXTrmgu/bGHzmqOs7mJSJBHy9Ud+ApHx3QjrkKSp1pxvlFg=="
   "resolved" "https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.2.tgz"

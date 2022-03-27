@@ -4,7 +4,7 @@
     },
     "agriculture": {
         "title": "Agriculture",
-        "description": "Agriculture"
+        "description": "Agricultures"
     },
     "mining": {
         "title": "Mining",
@@ -84,6 +84,6 @@
     },
     "career": {
         "title": "Careers",
-        "description": "career"
+        "description": "careers"
     }
 }

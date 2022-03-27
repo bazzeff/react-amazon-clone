@@ -18,6 +18,8 @@ import Register from "./Register";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import AddProduct from "./AddProduct";
+import Industries from "./Industries";
+import Categories from "./Categories";
 //import HotItem from "./HotItem";
 //import StartNow from "./StartNow";
 //import OnSale from "./OnSale";
@@ -72,7 +74,9 @@ function App() {
       <Route exact path="/register" element={<Register />} />
       <Route exact path="/reset" element={<Reset />} />
       <Route exact path="/dashboard" element={<Dashboard />} />
-      <Route exact path="/addproduct" element={<AddProduct />} />
+      <Route exact path="/add-product" element={<AddProduct />} />
+      <Route exact path="/industries" element={<Industries />} />
+      <Route exact path="/categories" element={<Categories />} />
     </Routes>  
      {/* Single Widget  */}
     <Footer /> 

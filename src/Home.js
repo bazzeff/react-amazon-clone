@@ -2,6 +2,8 @@ import React from "react";
 import Product from "./Product";
 import Header from './components/layout/header/Header'
 import Trending from "./Trending";
+import Newsletter from "./Newsletter";
+import Reviews from "./Reviews";
 import Banner from "./Banner";
 //import HorizontalMenu  from "./components/menu/HorizontalMenu"
 
@@ -68,10 +70,11 @@ function Home() {
           />
         </div>
       </div>
-      <div> 
+      <div>
       
       <Banner /> 
-        <Trending />
+  <Newsletter />   
+  <Trending /> 
       </div>
      
     </div>

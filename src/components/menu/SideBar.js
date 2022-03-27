@@ -6,6 +6,10 @@ import * as AiIcons from 'react-icons/ai';
 import { SideBarData } from './SideBarData';
 import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib'; 
+import Header from '../layout/header/Header';
+//import data from "../../data/menu.json";
+//import TagSlider from "react-tag-slider"
+//import TagSlider from "../../TagSlider"
 
 const Nav = styled.div`
   background: #15171c;
@@ -51,7 +55,7 @@ const SideBar = () => {
         <Nav>
           <NavIcon to='#'>
             <FaIcons.FaBars onClick={showSidebar} />
-          </NavIcon>
+          </NavIcon> 
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>

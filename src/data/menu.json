@@ -1,0 +1,194 @@
+[
+    {
+      "id": 1,
+      "title": "apple",
+      "img": "https://www.apple.com/v/apple-events/home/u/images/meta/overview__bcphzsdb4fpu_og.png?202203161557",
+      "url": "/apple"
+    },
+    {
+      "id": 2,
+      "title": "Good deals",
+      "img": "https://i.ebayimg.com/images/g/wn0AAOSwYIxX7WAS/s-l1200.jpg",
+      "url": "/good-deals"
+    },
+    {
+      "id": 3,
+      "title": "Cell Phones",
+      "img": "https://cdn.tmobile.com/content/dam/t-mobile/ntm/generic/pattern-abstract/full/bg-heroFull-multiple_phones_aerial.desktop.jpg",
+      "url": "/cell-phone"
+    },
+    {
+      "id": 4,
+      "title": "iPhone",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-gold-select?wid=940&hei=1112&fmt=png-alpha&.v=1645552345862",
+      "url": "/iphone"
+    },
+    {
+      "id": 5,
+      "title": "Samsung Galaxy",
+      "img": "https://m.media-amazon.com/images/I/819stUwa7RL._AC_SL1500_.jpg",
+      "url": "/samsung-galaxy"
+    },
+    {
+      "id": 6,
+      "title": "MacBook",
+      "img": "https://m.media-amazon.com/images/I/71gD8WdSlaL._AC_SL1500_.jpg",
+      "url": "/macbook"
+    },
+    {
+      "id": 7,
+      "title": "iPad",
+      "img": "https://m.media-amazon.com/images/I/91QlrgIeLOL._AC_SL1500_.jpg",
+      "url": "/ipad"
+    },
+    {
+      "id": 8,
+      "title": "AirPods",
+      "img": "https://m.media-amazon.com/images/I/71NTi82uBEL._AC_SL1500_.jpg",
+      "url": "/air-pod"
+    },
+    {
+      "id": 9,
+      "title": "Apple Watch",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ML893_VW_34FR+watch-45-alum-starlight-nc-nike7s_VW_34FR_WF_CO?wid=1400&hei=1400&trim=1,0&fmt=p-jpg&qlt=95&.v=1632171390000,1631662263000",
+      "url": "/apple-watch"
+    },
+    {
+      "id": 10,
+      "title": "iMac",
+      "img": "https://www.apple.com/newsroom/images/product/imac/standard/apple_new-imac-spring21_hero_04202021_Full-Bleed-Image.jpg.large.jpg",
+      "url": "/imac"
+    },
+    {
+      "id": 11,
+      "title": "Laptops",
+      "img": "https://cdn.thewirecutter.com/wp-content/uploads/2020/04/laptops-lowres-2x1-.jpg?auto=webp&quality=60&crop=2:1&width=1024",
+      "url": "/laptops"
+    },
+    {
+      "id": 12,
+      "title": "Monitors",
+      "img": "https://pyxis.nymag.com/v1/imgs/6bc/582/143fdc546c8caa47490ad5aa0b36124fcd-02-computer.2x.rsocial.w600.jpg",
+      "url": "/monitors"
+    },
+    {
+      "id": 13,
+      "title": "Audio",
+      "img": "https://pro.sony/s3/2021/07/06081043/Audio_product_family_bundle_Dante_TMV.png",
+      "url": "/audio"
+    },
+    {
+      "id": 14,
+      "title": "Tablet",
+      "img": "https://www.techadvisor.com/cmsdata/reviews/3809323/apple_ipad_mini_2021_review_12_thumb900_1-1.jpg",
+      "url": "/tablet"
+    },
+    {
+      "id": 15,
+      "title": "Chromebooks",
+      "img": "https://m.media-amazon.com/images/I/61hIPx--BAL._AC_SL1000_.jpg",
+      "url": "/chromebooks"
+    },
+    {
+      "id": 16,
+      "title": "Video Game Consoles",
+      "img": "https://www.gamespace.com/wp-content/uploads/2019/11/Gaming-Consoles.jpg",
+      "url": "/video-game-consoles"
+    },
+    {
+      "id": 17,
+      "title": "Bestsellers",
+      "img": "https://cdn.arstechnica.net/wp-content/uploads/2019/05/memorialday2019-800x444.jpg",
+      "url": "/bestsellers"
+    },
+    {
+      "id": 18,
+      "title": "MacBook Pro",
+      "img": "https://www.apple.com/v/macbook-pro-14-and-16/b/images/meta/macbook-pro-14-and-16_overview__fz0lron5xyuu_og.png",
+      "url": "/macbook-pro"
+    },
+    {
+      "id": 19,
+      "title": "MacBook Air",
+      "img": "https://www.apple.com/newsroom/images/product/mac/standard/Apple_new-macbookair-wallpaper-screen_11102020_big.jpg.large.jpg",
+      "url": "/macbook-air"
+    },
+    {
+      "id": 20,
+      "title": "iPhone 13",
+      "img": "https://thumbor.forbes.com/thumbor/711x483/https://specials-images.forbesimg.com/imageserve/607adf7dcbfabf4faaa69505/iPhone-13--iPhone-13-Pro--iPhone-13-Pro-Max--iPhone-13-Mini--iPhone-13-release-/960x0.jpg?fit=scale",
+      "url": "/iphone-13"
+    },
+    {
+      "id": 22,
+      "title": "iPhone 12",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-blue-select-2020?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1604343704000",
+      "url": "/iphone-12"
+    },
+    {
+      "id": 23,
+      "title": "iPhone 11",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-select-2019-family?wid=882&hei=1058&fmt=jpeg&qlt=80&.v=1567022175704",
+      "url": "/iphone-11"
+    },
+    {
+      "id": 24,
+      "title": "iPhone XR",
+      "img": "https://m.media-amazon.com/images/I/41ZjUOH6nRL._AC_.jpg",
+      "url": "/iphone-xr"
+    },
+    {
+      "id": 25,
+      "title": "iPhone XS",
+      "img": "https://m.media-amazon.com/images/I/61XLbE9JCKL._AC_SX679_.jpg",
+      "url": "/iphone-xs"
+    },
+    {
+      "id": 26,
+      "title": "iPhone X",
+      "img": "https://i5.walmartimages.com/asr/8d9af821-2998-4ce0-a3a5-f0eca44ec5a2_1.28b5bc90f261d967585683de7d443ef1.jpeg",
+      "url": "/iphone-x"
+    },
+    {
+      "id": 27,
+      "title": "iPhone 8",
+      "img": "https://m.media-amazon.com/images/I/71WbhCNoFrL._AC_SX679_.jpg",
+      "url": "/iphone-8"
+    },
+    {
+      "id": 28,
+      "title": "Unlocked Phones",
+      "img": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/SOL-23932-unlocked-save-15969.jpg",
+      "url": "/unlocked-phones"
+    },
+    {
+      "id": 29,
+      "title": "Certified Renewed",
+      "img": "https://www.androidauthority.com/wp-content/uploads/2020/04/lots-of-smartphones-2.jpg",
+      "url": "/certified-renewed"
+    },
+    {
+      "id": 30,
+      "title": "Renewed by GoPro",
+      "img": "https://m.media-amazon.com/images/I/71UAtd5yS5L._AC_SY355_.jpg",
+      "url": "/renewed-by-go-pro"
+    },
+    {
+      "id": 31,
+      "title": "Renewed by Sennheiser",
+      "img": "https://m.media-amazon.com/images/I/61cnIHyVnmL._AC_SL1312_.jpg",
+      "url": "/renewed-by-sennheiser"
+    },
+    {
+      "id": 32,
+      "title": "5G Phones",
+      "img": "https://i0.wp.com/www.yugatech.com/wp-content/uploads/2021/10/5G-Smartphones-under-PHP-16K-1.png?resize=720%2C405&ssl=1",
+      "url": "/5g-phones"
+    },
+    {
+      "id": 33,
+      "title": "Environmental impact",
+      "img": "https://www.greenmelocally.com/wp-content/uploads/2015/01/cell_phone_waste-720x340.jpg",
+      "url": "/environmental-impact"
+    } 
+  ]

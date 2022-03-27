@@ -7,6 +7,7 @@ import { useStateValue } from "../../../StateProvider";
 import { auth } from "../../../firebase";
 import {useTranslation} from "react-i18next";
 
+
 function HeaderComponent()
 {
     const [t, i18n] = useTranslation('common');
@@ -54,7 +55,12 @@ function Header() {
             <span className="header__optionLineTwo">Dashboard</span>
           </div>
         </Link> : ''}
-        
+        <Link to="/categories">
+          <div className="header__option">
+            <span className="header__optionLineOne">All</span>
+            <span className="header__optionLineTwo">categories</span>
+          </div>
+        </Link> 
         <Link to="/orders">
           <div className="header__option">
             <span className="header__optionLineOne">Returns</span>
@@ -62,7 +68,7 @@ function Header() {
           </div>
         </Link>
         
-        <Link to="/addproduct">
+        <Link to="/add-product">
           <div className="header__option">
             <span className="header__optionLineOne">add</span>
             <span className="header__optionLineTwo">product</span>
