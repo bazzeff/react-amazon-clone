@@ -41,7 +41,6 @@ function Dashboard() {
 <div className="{ 'dark': isDark }">
 <div className="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white dark:bg-gray-700 text-black dark:text-white">
  {/* <!-- Header -->  */}
- <Header /> 
  <SideBar /> 
  <div className="h-full ml-14 mt-14 mb-10 md:ml-64"> 
 
@@ -64,7 +63,7 @@ function Dashboard() {
     </p>
   </div>
   <div className="px-6 pt-4 pb-2">
-  <button className="my-5 w-64 flex justify-center bg-blue-500 text-gray-100 p-2  rounded-full tracking-wide
+  <button className="my-5 w-full flex justify-center bg-blue-500 text-gray-100 p-2  rounded-full tracking-wide
                                                font-semibold  focus:outline-none focus:shadow-outline hover:bg-blue-600 shadow-lg cursor-pointer transition ease-in duration-300" >View Categories</button>
   </div>
 </div>

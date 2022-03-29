@@ -12,7 +12,7 @@ function HeaderComponent()
 {
     const [t, i18n] = useTranslation('common');
     return <div>
-        <h1>{t('welcome.title', {framework:'React'})}</h1> 
+        <h1>{t('welcome.title')}</h1> 
     </div>
 }
 function Login() {
@@ -32,7 +32,6 @@ function Login() {
 
     return (
         <div className='login'>
-               <HeaderComponent />
             <div className='login__container'>
             <Link to='/'>
                 <img
@@ -40,6 +39,7 @@ function Login() {
                     src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png' 
                 />
             </Link>
+               <HeaderComponent />
                 <h1>Sign-in</h1>
 
                 <form>

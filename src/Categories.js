@@ -6,7 +6,6 @@ const Categories = () => {
 
   return (
     <section className="">
-    <Header />
     <div> 
         <div className="dark:bg-gray-900 text-black dark:text-white p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5">
            {menu.map((category) => { 
@@ -24,7 +23,7 @@ const Categories = () => {
 </p>
 </div>
 <div className="px-6 pt-4 pb-2">
-<Link to={url} className="my-5 w-64 flex justify-center bg-blue-500 text-gray-100 p-2  rounded-full tracking-wide
+<Link to={url} className="my-5 w-full flex justify-center bg-blue-500 text-gray-100 p-2  rounded-full tracking-wide
                                            font-semibold  focus:outline-none focus:shadow-outline hover:bg-blue-600 shadow-lg cursor-pointer transition ease-in duration-300" >Select Category</Link>
 </div>
 </div>

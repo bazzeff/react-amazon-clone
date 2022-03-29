@@ -24,16 +24,26 @@ function Register() {
   const [user, loading, error] = useAuthState(auth);
   const navigate = useNavigate();
 
+  const clearIputs = () => {
+    setEmail('');
+    setPassword('');
+  }
+  const clearErrors = () => {
+    setEmailError('');
+    setPasswordError('');
+  }
   const register = () => {
     if (!name) alert("Please enter name");
     if(password !== confirmPassword){
       alert("Passwords don't match")
       return;
-  }
+    }
+    clearErrors();
     registerWithEmailAndPassword(auth, email, password, name)
     .then((userCredential) => {
      // Signed in
       setHasAccount(true) 
+      clearIputs();
       const user = userCredential.user; 
       const docRef = addDoc(collection(db, "users"), {
         owner_uid: user.uid,
@@ -49,6 +59,7 @@ function Register() {
     })
     .catch((error) => {
       setHasAccount(false)
+      clearErrors();
       const errorCode = error.code;
       const errorMessage = error.message;
       // ..
@@ -103,7 +114,7 @@ function Register() {
           name="confirmPassword"
           value={confirmPassword}
           onChange={(e) => confirmPassword(e.target.value)}
-          placeholder="Password"
+          placeholder="Confirm Password"
         />
         <button className="register__btn" onClick={register}>
           Register

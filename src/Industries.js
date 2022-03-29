@@ -37,23 +37,7 @@ const Industries = () => {
     <div className="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white dark:bg-gray-700 text-black dark:text-white">
      {/* <!-- Header -->  */} 
     
-          
      <Header />
-    
-      <div className="dark:bg-gray-900 dark:text-white bg-gray-100">
-        <div className="max-w-5xl mx-auto p-8 py-24 flex flex-wrap justify-start items-center">
-          <div className="flex-1">
-            <h2 className="font-display-italic font-extrabold text-5xl md:text-6xl italic leading-none mb-12">NORTH
-    AMERICAN
-    INDUSTRY
-    CLASSIFICATION
-    SYSTEM</h2>
-          </div>
-          <div className="w-full lg:w-72">
-            <p className="leading-loose max-w-xl">Industry classifications in that it is constructed within a single conceptual Cloud Computing framework. Economic units that have similar production processes are classified in the same industry, and the lines drawn between industries demarcate, to the extent practicable, differences in production processes. </p>
-          </div>
-        </div>
-      </div>
       <div className="bg-white dark:bg-gray-900 text-black dark:text-white p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
          {/*   <!--Card 1--> */} 
           <div className="rounded overflow-hidden bg-white dark:bg-gray-800 dark:text-white shadow-lg">

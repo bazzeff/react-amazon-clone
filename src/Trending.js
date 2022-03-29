@@ -31,7 +31,7 @@ const addToBasket = () => {
     </p>
   </div>
   <div className="px-6 pt-4 pb-2">
-  <button className="my-5 w-64 flex justify-center bg-blue-500 text-gray-100 p-2  rounded-full tracking-wide
+  <button className="my-5 w-full flex justify-center bg-blue-500 text-gray-100 p-2  rounded-full tracking-wide
                                                font-semibold  focus:outline-none focus:shadow-outline hover:bg-blue-600 shadow-lg cursor-pointer transition ease-in duration-300" >Add to Basket</button>
   </div>
 </div>
