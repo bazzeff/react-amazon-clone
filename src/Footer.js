@@ -178,9 +178,9 @@ const Footer = () => {
       </div>
     </div>
   </div>
-  <div class="text-center p-6 bg-gray-200">
+  <div class="dark:bg-gray-900 text-black dark:text-white text-center p-6 bg-gray-200">
     <span>© 2021 Copyright:</span>
-    <Link class="text-gray-600 font-semibold" to="/">Real Black Market -  All Rights Reserved</Link>
+    <Link class="dark:bg-gray-900 dark:text-white text-gray-600 font-semibold" to="/"> Real Black Market -  All Rights Reserved</Link>
   </div>
 </footer>
 </div> 

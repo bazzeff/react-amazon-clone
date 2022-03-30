@@ -1,4 +1,5 @@
 import React from "react";
+//import "./Home.css";
 import Product from "./Product";
 import Header from './components/layout/header/Header'
 import Trending from "./Trending";
@@ -10,11 +11,10 @@ import Banner from "./Banner";
 function Home() {
   return (
   <div>
-  <Header /> 
     <div className="home">
       <div className="home__container">
         <img
-          className="object-cover w-full h-96"
+          className="object-cover w-full h-full"
           src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
           alt=""
         />

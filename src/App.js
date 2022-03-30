@@ -21,6 +21,30 @@ import AddProduct from "./AddProduct";
 import Industries from "./Industries";
 import Categories from "./Categories";
 import Agriculture from "./pages/agriculture/Agriculture";
+import Mining from "./pages/mining/Mining";
+import Utilities from "./pages/utilities/Utilities";
+import Construction from "./pages/construction/Construction";
+import Manufacturing from "./pages/manufacturer/Manufacturing";
+import RetailTrade from "./pages/retail-trade/RetailTrade";
+import Transportation from "./pages/transportation/Transportation";
+import Wholesaler from "./pages/wholesaler/Wholesaler";
+import Information from "./pages/information/Information";
+import Professional from "./pages/professional/Professional";
+import FinancialServices from "./pages/financial-services/FinancialServices";
+import Enterprises from "./pages/enterprises/Enterprises";
+import Insurance from "./pages/insurance/Insurance";
+import RealEstate from "./pages/real-estate/RealEstate";
+import AdministrativeSupport from "./pages/administrative-support/AdministrativeSupport";
+import LegalServices from "./pages/legal-services/LegalServices";
+import Schools from "./pages/schools/Schools";
+import HealthCare from "./pages/health-care/HealthCare";
+import TransportationServices from "./pages/transportation-services/TransportationServices";
+import Entertainment from "./pages/entertainment/Entertainment";
+import Accommodations from "./pages/accommodation/Accommodations";
+import FoodServices from "./pages/food-services/FoodServices";
+import OtherServices from "./pages/other-services/OtherServices";
+import Agencies from "./pages/agencies/Agencies";
+import Careers from "./pages/careers/Careers";
 //import HotItem from "./HotItem";
 //import StartNow from "./StartNow";
 //import OnSale from "./OnSale";
@@ -31,6 +55,7 @@ import {  AirPods, Apple, AppleWatch, Audio, BestSellers, CellPhones, CertifiedR
 IPhone, IPhone8, IPhone11, IPhone12, IPhone13, IPhoneX, IPhoneXR, IPhoneXS, Laptops, MacBook, MacBookAir, MacBookPro, Monitors, RenewedbyGoPro, RenewedbySennheiser,
 SamsungGalaxy, Tablet, UnlockedPhones, VideoGames } from "./pages/electronics";
 import Header from "./components/layout/header/Header";
+import Payment from "./Payment";
 function App() {
   const [{}, dispatch] = useStateValue();
 
@@ -82,12 +107,39 @@ function App() {
       <Route exact path="/add-product" element={<AddProduct />} />
       <Route exact path="/industries" element={<Industries />} />
       <Route exact path="/categories" element={<Categories />} />
+      <Route exact path="/payment" element={<Payment />} />
 
       <Route exact path="/agriculture" element={<Agriculture />} />
+      <Route exact path="/mining" element={<Mining />} />
+      <Route exact path="/utilities" element={<Utilities />} />
+      <Route exact path="/construction" element={<Construction />} />
+      <Route exact path="/manufacturing" element={<Manufacturing />} />
+      <Route exact path="/wholesaler" element={<Wholesaler />} />
+      <Route exact path="/retail-trade" element={<RetailTrade />} />
+      <Route exact path="/transportation" element={<Transportation />} />
+      <Route exact path="/information" element={<Information />} />
+      <Route exact path="/professional" element={<Professional />} />
+      <Route exact path="/financial-services" element={<FinancialServices />} />
+      <Route exact path="/enterprises" element={<Enterprises />} />
+      <Route exact path="/insurance" element={<Insurance />} />
+      <Route exact path="/real-estate" element={<RealEstate />} />
+      <Route exact path="/administrative-support" element={<AdministrativeSupport />} />
+      <Route exact path="/legal-services" element={<LegalServices />} />
+      <Route exact path="/schools" element={<Schools />} />
+      <Route exact path="/health-care" element={<HealthCare />} />
+      <Route exact path="/transportation-services" element={<TransportationServices />} />
+      <Route exact path="/entertainment" element={<Entertainment />} />
+      <Route exact path="/accommodation" element={<Accommodations />} />
+      <Route exact path="/food-services" element={<FoodServices />} />
+      <Route exact path="/other-services" element={<OtherServices />} />
+      <Route exact path="/agencies" element={<Agencies />} />
+      <Route exact path="/careers" element={<Careers />} />
+      
+
+
 
       <Route exact path="/air-pod" element={<AirPods />} />
       <Route exact path="/apple" element={<Apple />} />
-
       <Route exact path="/apple-watch" element={<AppleWatch />} />
       <Route exact path="/audio" element={<Audio />} />
       <Route exact path="/best-sellers" element={<BestSellers />} />

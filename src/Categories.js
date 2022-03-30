@@ -7,12 +7,12 @@ const Categories = () => {
   return (
     <section className="">
     <div> 
-        <div className="dark:bg-gray-900 text-black dark:text-white p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5">
+        <div className="dark:bg-gray-800 text-black dark:text-white p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5">
            {menu.map((category) => { 
                const { id, url, title, price, img, description } = category;
                return (
                 <article key={id}> 
-                     <div className="bg-white m-2 max-w-sm rounded overflow-hidden shadow-lg">
+                     <div className="dark:bg-gray-700 text-black dark:text-white m-2 max-w-sm rounded overflow-hidden shadow-lg">
                      <Link to={url}>
 <img className="w-full h-72"  src={img} alt={title} /></Link>
 <div className="px-6 py-4">

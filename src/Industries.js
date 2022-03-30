@@ -34,10 +34,8 @@ const Industries = () => {
       return (
         <div> 
     <div className="{ 'dark': isDark }">
-    <div className="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white dark:bg-gray-700 text-black dark:text-white">
-     {/* <!-- Header -->  */} 
-    
-     <Header />
+    <div className="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white dark:bg-gray-800 text-black dark:text-white">
+        
       <div className="bg-white dark:bg-gray-900 text-black dark:text-white p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
          {/*   <!--Card 1--> */} 
           <div className="rounded overflow-hidden bg-white dark:bg-gray-800 dark:text-white shadow-lg">
@@ -145,7 +143,7 @@ const Industries = () => {
               </div>
                {/*  <!--Card 7--> */}
               <div className="rounded overflow-hidden bg-white dark:bg-gray-800 dark:text-white shadow-lg">
-                    <Link to="/retail-store">
+                    <Link to="/retail-trade">
                     <img className="w-full" src="https://ahmenki.s3.amazonaws.com/images/site_categories/ZXTefreqe54F4YEUABsyiEoVfcZ4yuGYSeRoHuKj.jpeg" alt="Mountain"/>
                     </Link>
                     <div className="px-6 py-4">
@@ -257,7 +255,7 @@ const Industries = () => {
                       </div>
                        {/*  <!--Card 13--> */}
                       <div className="rounded overflow-hidden bg-white dark:bg-gray-800 dark:text-white shadow-lg">
-                            <Link to="/enterprise">
+                            <Link to="/enterprises">
                             <img className="w-full" src="https://ahmenki.s3.amazonaws.com/images/site_categories/NCcGZ6o8yhjzOv6YfIcC9ZYipvYPDo0dGPNRPzLJ.jpeg" alt="Mountain"/>
                             </Link>
                             <div className="px-6 py-4">
@@ -276,7 +274,7 @@ const Industries = () => {
                           </div>
                            {/*  <!--Card 14--> */}
                           <div className="rounded overflow-hidden bg-white dark:bg-gray-800 dark:text-white shadow-lg">
-                            <Link to="/administrative"><img className="w-full" src="https://ahmenki.s3.amazonaws.com/images/site_categories/gtVfyu0TzSxUO9aGMryDJiUWsKndXKVmvytKxtrk.png" alt="River"/>
+                            <Link to="/administrative-support"><img className="w-full" src="https://ahmenki.s3.amazonaws.com/images/site_categories/gtVfyu0TzSxUO9aGMryDJiUWsKndXKVmvytKxtrk.png" alt="River"/>
                             </Link>
                             <div className="px-6 py-4">
                               <div className="font-bold text-xl mb-2">{t('administrative.title')}</div>
@@ -317,7 +315,7 @@ const Industries = () => {
                           </div>
                            {/*  <!--Card 16--> */}
                           <div className="rounded overflow-hidden bg-white dark:bg-gray-800 dark:text-white shadow-lg">
-                                <Link to="/healthcare">
+                                <Link to="/health-care">
                                 <img className="w-full" src="https://ahmenki.s3.amazonaws.com/images/site_categories/T1N0wmPU6bZ0Xk0kDuzOK4XYgufqdXtDQoZTJHrk.png" alt="Mountain"/>
                                 </Link>
                                 <div className="px-6 py-4">
@@ -416,7 +414,7 @@ const Industries = () => {
                                   </div>
                                    {/*  <!--Card 19--> */}
                                   <div class="rounded overflow-hidden bg-white dark:bg-gray-800 dark:text-white shadow-lg">
-                                    <Link to="/career">
+                                    <Link to="/careers">
                                     <img class="w-full" src="https://s3.us-east-1.amazonaws.com/ahmenki/images/career/qYWMmbQDCleV2YWlocCRIfAqdsPOHtqYWVfqIym1.jpeg" alt="Forest"/>
                                     </Link>
                                     <div class="px-6 py-4">

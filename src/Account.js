@@ -5,7 +5,6 @@ import Header from './components/layout/header/Header'
 const Account = () => {
   return (
     <div>
-    <Header />
     Account  
     </div>
   )

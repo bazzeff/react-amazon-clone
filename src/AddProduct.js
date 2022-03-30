@@ -5,7 +5,6 @@ import ProductItemForm from './components/product/ProductItemForm'
 const AddProduct = () => {
   return (
     <div>
-    <Header />
     <ProductItemForm />
     </div>
   )

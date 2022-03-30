@@ -39,7 +39,6 @@ function Header() {
         <SearchIcon className="header__searchIcon" />
       </div>
       <div>
-
     <HeaderComponent/>
       </div>
       <div className="header__nav">

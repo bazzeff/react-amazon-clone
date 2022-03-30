@@ -18,7 +18,7 @@ const categoryData = [
             {
                 id : "22",
                 url : "22h",
-                tag : "#mining",
+                tag : "#utilities",
                 title : "Utilities Services",
                 description : "Utilities Services.",
                 image : "https://ahmenki.s3.amazonaws.com/images/site_categories/JGPnGyxsqHHsZFHNumIuIdK5kG6uyPnQNkoj10Ji.jpeg"

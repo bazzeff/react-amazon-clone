@@ -5,6 +5,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
+import Navbar from "./components/menu/Navbar";
 
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -24,6 +25,7 @@ function Header() {
           alt=""
         />
       </Link>
+    <Navbar />
       <div className="header__search">
         <input className="header__searchInput" type="text" />
         <SearchIcon className="header__searchIcon" />
