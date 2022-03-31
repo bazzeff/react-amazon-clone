@@ -1,16 +1,11 @@
 
-import React,{ useState , useEffect} from 'react' 
-//import { Link } from 'react-router-dom';
+import React from 'react' 
 import products from './data/data'; 
 import './Trending.css'
 import { useStateValue } from "./StateProvider";
  
 const Trending = () => {
-  //const { id, title, price, img, description } = products;
-  const [{ basket }, dispatch] = useStateValue();
- // const [products, setProducts] = useState(products);
-   //const [index,setIndex] = useState(0);
-   //const [isloading,setIsloading] =useEffect();
+  const [dispatch] = useStateValue();
  
    const addToBasket = () => {
      //dispatch item to basket

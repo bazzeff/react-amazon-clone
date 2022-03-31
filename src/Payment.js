@@ -3,11 +3,16 @@ import './Payment.css';
 import { useStateValue } from "./StateProvider";
 import CheckoutProduct from "./CheckoutProduct";
 import { Link, useNavigate } from "react-router-dom";
-import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
+import { CardElement, useStripe, useElements, Elements } from "@stripe/react-stripe-js";
 import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "./reducer";
 import axios from './axios';
 import { db } from "./firebase";
+//import { doc, query, getDocs, collection, where, addDoc } from "firebase/firestore"; 
+
+
+const promise = loadStripe("pk_test_ttgsxvQHqbgNZgopICqlH6Lr00bdFsBxK4");
 
 function Payment() {
     const [{ basket, user }, dispatch] = useStateValue();
@@ -120,6 +125,7 @@ function Payment() {
                         ))}
                     </div>
                 </div>
+                <Elements stripe={promise}>
             
 
                 {/* Payment section - Payment method */}
@@ -154,6 +160,7 @@ function Payment() {
                             </form>
                     </div>
                 </div>
+                </Elements>
             </div>
         </div>
     )

@@ -5,8 +5,7 @@ import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import { SideBarData } from './SideBarData';
 import SubMenu from './SubMenu';
-import { IconContext } from 'react-icons/lib'; 
-import Header from '../layout/header/Header';
+import { IconContext } from 'react-icons/lib';
 //import data from "../../data/menu.json";
 //import TagSlider from "react-tag-slider"
 //import TagSlider from "../../TagSlider"

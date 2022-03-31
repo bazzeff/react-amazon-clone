@@ -1,40 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { useAuthState } from "react-firebase-hooks/auth"; 
+import React from "react";
 import "./Dashboard.css";
-import { auth, logout } from "./firebase"; 
-import SideBar from "./components/menu/SideBar";
-import { Link, useNavigate } from "react-router-dom";
-import {useTranslation} from "react-i18next"; 
-import Trending from "./Trending";
-import products from './data/data'; 
-import Header from "./components/layout/header/Header";
+import products from './data/data';
 
 
 function Dashboard() {
-  const [user, loading] = useAuthState(auth);
-  const [name, setName] = useState("");
-  const navigate = useNavigate();
-  const {t, i18n} = useTranslation('common');
-
-  const fetchUserName = async () => {
-
-    const {email, password} = this.state;
-    try {
-      await auth.signInWithEmailAndPassword(email, password);
-          this.setState({ email: "", password: "" });
-      setName(user.email);
-    } catch (err) {
-      console.error(err);
-      alert("An error occured while fetching user data");
-    }
-  };
-
-  useEffect(() => {
-    if (loading) return;
-    if (!user) return navigate("/");
-
-    fetchUserName();
-  }, [user, loading]);
 
   return (
     <div className="body"> 

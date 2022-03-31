@@ -1,36 +1,10 @@
-import React, { useEffect,useState } from "react";
-import { useAuthState } from "react-firebase-hooks/auth"; 
-import { Link, useNavigate } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import {useTranslation} from "react-i18next";
-import Header from './components/layout/header/Header'
-import { auth, logout } from "./firebase"; 
 
 const Industries = () => {
-  const [user, loading] = useAuthState(auth);
-  const [name, setName] = useState(""); 
-    const navigate = useNavigate();
-    const {t, i18n} = useTranslation('common');
-    
-    const fetchUserName = async () => {
+    const {t} = useTranslation('common');
 
-        const {email, password} = this.state;
-        try {
-          await auth.signInWithEmailAndPassword(email, password);
-              this.setState({ email: "", password: "" });
-          setName(user.email);
-        } catch (err) {
-          console.error(err);
-          alert("An error occured while fetching user data");
-        }
-      };
-
-    useEffect(() => {
-        if (loading) return;
-        if (!user) return navigate("/");
-    
-        fetchUserName();
-      }, [user, loading]);
-      
       return (
         <div> 
     <div className="{ 'dark': isDark }">
@@ -49,7 +23,7 @@ const Industries = () => {
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#argiculture</span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#agriculture</span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#forestry</span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#fishing</span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#hunting</span>
@@ -334,7 +308,7 @@ const Industries = () => {
                               </div>
                                {/*  <!--Card 17--> */}
                               <div className="rounded overflow-hidden bg-white dark:bg-gray-800 dark:text-white shadow-lg">
-                                <Link to="/entertainment"><img className="w-full" src="https://ahmenki.s3.amazonaws.com/images/site_categories/83UJCWVbkpuPLFpLqZN0QddVzLy76RZ1PWz2sEi8.jpeg" alt="River"/>
+                                <Link to="/art-entertainment"><img className="w-full" src="https://ahmenki.s3.amazonaws.com/images/site_categories/83UJCWVbkpuPLFpLqZN0QddVzLy76RZ1PWz2sEi8.jpeg" alt="River"/>
                                 </Link>
                                 <div className="px-6 py-4">
                                   <div className="font-bold text-xl mb-2">{t('entertainment.title')}</div>

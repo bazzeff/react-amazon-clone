@@ -35,27 +35,21 @@ import Enterprises from "./pages/enterprises/Enterprises";
 import Insurance from "./pages/insurance/Insurance";
 import RealEstate from "./pages/real-estate/RealEstate";
 import AdministrativeSupport from "./pages/administrative-support/AdministrativeSupport";
-import LegalServices from "./pages/legal-services/LegalServices";
 import Schools from "./pages/schools/Schools";
 import HealthCare from "./pages/health-care/HealthCare";
-import TransportationServices from "./pages/transportation-services/TransportationServices";
-import Entertainment from "./pages/entertainment/Entertainment";
+import Entertainment from "./pages/art-entertainment/Entertainment";
 import Accommodations from "./pages/accommodation/Accommodations";
-import FoodServices from "./pages/food-services/FoodServices";
 import OtherServices from "./pages/other-services/OtherServices";
 import Agencies from "./pages/agencies/Agencies";
 import Careers from "./pages/careers/Careers";
-//import HotItem from "./HotItem";
-//import StartNow from "./StartNow";
-//import OnSale from "./OnSale";
-//import BestSeller from "./BestSeller";
-//import TopViewed from "./TopViewed";
-//import Newsletter from "./Newsletter";
 import {  AirPods, Apple, AppleWatch, Audio, BestSellers, CellPhones, CertifiedRenewed,Chromebooks, EnvironmentalImpact, G5Phones, IMac, IPad, 
-IPhone, IPhone8, IPhone11, IPhone12, IPhone13, IPhoneX, IPhoneXR, IPhoneXS, Laptops, MacBook, MacBookAir, MacBookPro, Monitors, RenewedbyGoPro, RenewedbySennheiser,
+IPhone, IPhone8, IPhone11, IPhone12, IPhone13, IPhoneX, IPhoneXR, IPhoneXS, Laptops, MacBook, MacBookAir, MacBookPro, Monitors, RenewedByGoPro, RenewedBySennheiser,
 SamsungGalaxy, Tablet, UnlockedPhones, VideoGames } from "./pages/electronics";
 import Header from "./components/layout/header/Header";
+import BusinessPages from "./pages/business/BusinessPages";
 import Payment from "./Payment";
+
+
 function App() {
   const [{}, dispatch] = useStateValue();
 
@@ -93,6 +87,10 @@ function App() {
     <Route path="/login">
       <Route path="/login" element={<Login />}/>
     </Route> 
+
+    <Route path="/payment">
+      <Route path="/payment"  element={<Payment />}/>
+    </Route> 
       <Route path="orders" element={<Orders />} /> 
       <Route path="account" element={<Account />} /> 
       <Route path="checkout" element={<Checkout />} /> 
@@ -107,7 +105,6 @@ function App() {
       <Route exact path="/add-product" element={<AddProduct />} />
       <Route exact path="/industries" element={<Industries />} />
       <Route exact path="/categories" element={<Categories />} />
-      <Route exact path="/payment" element={<Payment />} />
 
       <Route exact path="/agriculture" element={<Agriculture />} />
       <Route exact path="/mining" element={<Mining />} />
@@ -124,19 +121,16 @@ function App() {
       <Route exact path="/insurance" element={<Insurance />} />
       <Route exact path="/real-estate" element={<RealEstate />} />
       <Route exact path="/administrative-support" element={<AdministrativeSupport />} />
-      <Route exact path="/legal-services" element={<LegalServices />} />
       <Route exact path="/schools" element={<Schools />} />
       <Route exact path="/health-care" element={<HealthCare />} />
-      <Route exact path="/transportation-services" element={<TransportationServices />} />
-      <Route exact path="/entertainment" element={<Entertainment />} />
+      <Route exact path="/art-entertainment" element={<Entertainment />} />
       <Route exact path="/accommodation" element={<Accommodations />} />
-      <Route exact path="/food-services" element={<FoodServices />} />
       <Route exact path="/other-services" element={<OtherServices />} />
       <Route exact path="/agencies" element={<Agencies />} />
       <Route exact path="/careers" element={<Careers />} />
       
 
-
+      <Route exact path="/business" element={<BusinessPages />} />
 
       <Route exact path="/air-pod" element={<AirPods />} />
       <Route exact path="/apple" element={<Apple />} />
@@ -146,23 +140,23 @@ function App() {
       <Route exact path="/cell-phones" element={<CellPhones />} />
       <Route exact path="/certified-renewed" element={<CertifiedRenewed />} />
       <Route exact path="/chrome-books" element={<Chromebooks />} />
-      <Route exact path="/imac" element={<IMac />} />
-      <Route exact path="/ipad" element={<IPad />} />
-      <Route exact path="/iphone" element={<IPhone />} />
-      <Route exact path="/iphone8" element={<IPhone8 />} />
-      <Route exact path="/iphone11" element={<IPhone11 />} />
-      <Route exact path="/iphone12" element={<IPhone12 />} />
-      <Route exact path="/iphone13" element={<IPhone13 />} />
-      <Route exact path="/iphonex" element={<IPhoneX />} />
-      <Route exact path="/iphonexr" element={<IPhoneXR />} />
-      <Route exact path="/iphonexs" element={<IPhoneXS />} />
+      <Route exact path="/i-mac" element={<IMac />} />
+      <Route exact path="/i-pad" element={<IPad />} />
+      <Route exact path="/i-phone" element={<IPhone />} />
+      <Route exact path="/i-phone-8" element={<IPhone8 />} />
+      <Route exact path="/i-phone-11" element={<IPhone11 />} />
+      <Route exact path="/i-phone-12" element={<IPhone12 />} />
+      <Route exact path="/i-phone-13" element={<IPhone13 />} />
+      <Route exact path="/i-phone-x" element={<IPhoneX />} />
+      <Route exact path="/i-phone-xr" element={<IPhoneXR />} />
+      <Route exact path="/i-phone-xs" element={<IPhoneXS />} />
       <Route exact path="/laptops" element={<Laptops />} />
       <Route exact path="/mac-book" element={<MacBook />} />
       <Route exact path="/mac-book-air" element={<MacBookAir />} />
       <Route exact path="/mac-book-pro" element={<MacBookPro />} />
       <Route exact path="/monitors" element={<Monitors />} />
-      <Route exact path="/renewed-by-go-pro" element={<RenewedbyGoPro />} />
-      <Route exact path="/renewed-by-sennheiser" element={<RenewedbySennheiser />} />
+      <Route exact path="/renewed-by-go-pro" element={<RenewedByGoPro />} />
+      <Route exact path="/renewed-by-sennheiser" element={<RenewedBySennheiser />} />
       <Route exact path="/samsung-galaxy" element={<SamsungGalaxy />} />
       <Route exact path="/tablet" element={<Tablet />} />
       <Route exact path="/unlocked-phones" element={<UnlockedPhones />} />

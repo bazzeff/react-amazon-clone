@@ -1,9 +1,9 @@
 import React from 'react'
 
-const RenewedbyGoPro = () => {
+const RenewedByGoPro = () => {
   return (
     <div>RenewedbyGoPro</div>
   )
 }
 
-export default RenewedbyGoPro
+export default RenewedByGoPro

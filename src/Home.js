@@ -1,10 +1,8 @@
 import React from "react";
 //import "./Home.css";
-import Product from "./Product";
-import Header from './components/layout/header/Header'
+import Product from "./Product"
 import Trending from "./Trending";
 import Newsletter from "./Newsletter";
-import Reviews from "./Reviews";
 import Banner from "./Banner";
 //import HorizontalMenu  from "./components/menu/HorizontalMenu"
 

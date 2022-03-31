@@ -1,9 +1,9 @@
 import React from 'react'
 
-const RenewedbySennheiser = () => {
+const RenewedBySennheiser = () => {
   return (
     <div>RenewedbySennheiser</div>
   )
 }
 
-export default RenewedbySennheiser
+export default RenewedBySennheiser
