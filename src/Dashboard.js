@@ -18,16 +18,15 @@ function Dashboard() {
 
 <div className="dark:bg-gray-800 text-black dark:text-white grid grid-flow-row-dense grid-cols-1 gap-1 flex flex-wrap -m-4 sm:grid-cols-3 md:grid-cols-4">
 {products.map((category) => { 
-                   const { id, title, price, img, description } = category;
                    return (
-                       <article key={id}> 
+                       <article key={category.id}> 
                          <div className="dark:bg-gray-700 text-black dark:text-white max-w-sm m-2 rounded overflow-hidden shadow-lg">
-  <img className="w-72 h-72"  src={img} alt={title} />
+  <img className="w-72 h-72"  src={category.img} alt={category.title} />
   <div className="px-6 py-4">
-    <div className="font-bold text-xl mb-2">{title}</div>
-     <h6 className="pt-2 m-0 leading-4 font-semibold">{price}</h6>
+    <div className="font-bold text-xl mb-2">{category.title}</div>
+     <h6 className="pt-2 m-0 leading-4 font-semibold">{category.price}</h6>
     <p className="text-gray-700 text-base">
-    {description}
+    {category.description}
     </p>
   </div>
   <div className="px-6 pt-4 pb-2">

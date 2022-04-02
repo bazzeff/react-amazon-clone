@@ -34,10 +34,10 @@ function Register() {
   }
   const register = () => {
     if (!name) alert("Please enter name");
-    if(password !== confirmPassword){
-      alert("Passwords don't match")
-      return;
-    }
+   // if(password !== confirmPassword){
+   //   alert("Passwords don't match")
+    //  return;
+   // }
     clearErrors();
     registerWithEmailAndPassword(auth, email, password, name)
     .then((userCredential) => {
@@ -107,14 +107,6 @@ function Register() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
-        />
-        <input
-          type="password"
-          className="register__textBox"
-          name="confirmPassword"
-          value={confirmPassword}
-          onChange={(e) => confirmPassword(e.target.value)}
-          placeholder="Confirm Password"
         />
         <button className="register__btn" onClick={register}>
           Register

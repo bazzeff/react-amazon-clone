@@ -21,7 +21,7 @@
       "id": 4,
       "title": "iPhone",
       "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-gold-select?wid=940&hei=1112&fmt=png-alpha&.v=1645552345862",
-      "url": "/iphone"
+      "url": "/i-phone"
     },
     {
       "id": 5,
@@ -33,7 +33,7 @@
       "id": 6,
       "title": "MacBook",
       "img": "https://m.media-amazon.com/images/I/71gD8WdSlaL._AC_SL1500_.jpg",
-      "url": "/macbook"
+      "url": "/mac-book"
     },
     {
       "id": 7,
@@ -105,55 +105,55 @@
       "id": 18,
       "title": "MacBook Pro",
       "img": "https://www.apple.com/v/macbook-pro-14-and-16/b/images/meta/macbook-pro-14-and-16_overview__fz0lron5xyuu_og.png",
-      "url": "/macbook-pro"
+      "url": "/mac-book-pro"
     },
     {
       "id": 19,
       "title": "MacBook Air",
       "img": "https://www.apple.com/newsroom/images/product/mac/standard/Apple_new-macbookair-wallpaper-screen_11102020_big.jpg.large.jpg",
-      "url": "/macbook-air"
+      "url": "/mac-book-air"
     },
     {
       "id": 20,
       "title": "iPhone 13",
       "img": "https://thumbor.forbes.com/thumbor/711x483/https://specials-images.forbesimg.com/imageserve/607adf7dcbfabf4faaa69505/iPhone-13--iPhone-13-Pro--iPhone-13-Pro-Max--iPhone-13-Mini--iPhone-13-release-/960x0.jpg?fit=scale",
-      "url": "/iphone-13"
+      "url": "/i-phone-13"
     },
     {
       "id": 22,
       "title": "iPhone 12",
       "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-blue-select-2020?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1604343704000",
-      "url": "/iphone-12"
+      "url": "/i-phone-12"
     },
     {
       "id": 23,
       "title": "iPhone 11",
       "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-select-2019-family?wid=882&hei=1058&fmt=jpeg&qlt=80&.v=1567022175704",
-      "url": "/iphone-11"
+      "url": "/i-phone-11"
     },
     {
       "id": 24,
       "title": "iPhone XR",
       "img": "https://m.media-amazon.com/images/I/41ZjUOH6nRL._AC_.jpg",
-      "url": "/iphone-xr"
+      "url": "/i-phone-xr"
     },
     {
       "id": 25,
       "title": "iPhone XS",
       "img": "https://m.media-amazon.com/images/I/61XLbE9JCKL._AC_SX679_.jpg",
-      "url": "/iphone-xs"
+      "url": "/i-phone-xs"
     },
     {
       "id": 26,
       "title": "iPhone X",
       "img": "https://i5.walmartimages.com/asr/8d9af821-2998-4ce0-a3a5-f0eca44ec5a2_1.28b5bc90f261d967585683de7d443ef1.jpeg",
-      "url": "/iphone-x"
+      "url": "/i-phone-x"
     },
     {
       "id": 27,
       "title": "iPhone 8",
       "img": "https://m.media-amazon.com/images/I/71WbhCNoFrL._AC_SX679_.jpg",
-      "url": "/iphone-8"
+      "url": "/i-phone-8"
     },
     {
       "id": 28,

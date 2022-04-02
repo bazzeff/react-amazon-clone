@@ -130,7 +130,7 @@ const firebaseConfig = {
       const user = res.user;
       await getDocs(collection(db, "users"), {
         uid: user.uid, 
-        email,
+        email: user.email,
       });
     } catch (err) {
       console.error(err);
