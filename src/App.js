@@ -10,7 +10,6 @@ import Orders from "./Orders";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { loadStripe } from "@stripe/stripe-js";
-import { Elements } from "@stripe/react-stripe-js";
 import Account from "./Account";
 import About from "./About";
 import Faq from "./components/layout/faq/Faq";
@@ -21,35 +20,11 @@ import Dashboard from "./Dashboard";
 import Reset from "./Reset";
 import Register from "./Register";
 import AddProduct from "./AddProduct";
-import Industries from "./Industries";
 import Categories from "./Categories";
-import Agriculture from "./pages/agriculture/Agriculture";
-import Mining from "./pages/mining/Mining";
-import Utilities from "./pages/utilities/Utilities";
-import Construction from "./pages/construction/Construction";
-import Manufacturing from "./pages/manufacturer/Manufacturing";
-import RetailTrade from "./pages/retail-trade/RetailTrade";
-import Transportation from "./pages/transportation/Transportation";
-import Wholesaler from "./pages/wholesaler/Wholesaler";
-import Information from "./pages/information/Information";
-import Professional from "./pages/professional/Professional";
-import FinancialServices from "./pages/financial-services/FinancialServices";
-import Enterprises from "./pages/enterprises/Enterprises";
-import Insurance from "./pages/insurance/Insurance";
-import RealEstate from "./pages/real-estate/RealEstate";
-import AdministrativeSupport from "./pages/administrative-support/AdministrativeSupport";
-import Schools from "./pages/schools/Schools";
-import HealthCare from "./pages/health-care/HealthCare";
-import Entertainment from "./pages/art-entertainment/Entertainment";
-import Accommodations from "./pages/accommodation/Accommodations";
-import OtherServices from "./pages/other-services/OtherServices";
-import Agencies from "./pages/agencies/Agencies";
-import Careers from "./pages/careers/Careers";
 import {  AirPods, Apple, AppleWatch, Audio, BestSellers, CellPhones, CertifiedRenewed,Chromebooks, EnvironmentalImpact, G5Phones, IMac, IPad, 
 IPhone, IPhone8, IPhone11, IPhone12, IPhone13, IPhoneX, IPhoneXR, IPhoneXS, Laptops, MacBook, MacBookAir, MacBookPro, Monitors, RenewedByGoPro, RenewedBySennheiser,
 SamsungGalaxy, Tablet, UnlockedPhones, VideoGames } from "./pages/electronics";
 import Header from "./components/layout/header/Header";
-import BusinessPages from "./pages/business/BusinessPages";
 
 const promise = loadStripe("pk_test_ttgsxvQHqbgNZgopICqlH6Lr00bdFsBxK4");
 
@@ -110,34 +85,9 @@ function App() {
       <Route exact path="/reset" element={<Reset />} />
       <Route exact path="/dashboard" element={<Dashboard />} />
       <Route exact path="/add-product" element={<AddProduct />} />
-      <Route exact path="/industries" element={<Industries />} />
       <Route exact path="/categories" element={<Categories />} />
 
-      <Route path="/agriculture" element={<Agriculture />} />
-      <Route path="/mining" element={<Mining />} />
-      <Route path="/utilities" element={<Utilities />} />
-      <Route path="/construction" element={<Construction />} />
-      <Route path="/manufacturing" element={<Manufacturing />} />
-      <Route path="/wholesaler" element={<Wholesaler />} />
-      <Route path="/retail-trade" element={<RetailTrade />} />
-      <Route path="/transportation" element={<Transportation />} />
-      <Route path="/information" element={<Information />} />
-      <Route path="/professional" element={<Professional />} />
-      <Route path="/financial-services" element={<FinancialServices />} />
-      <Route path="/enterprises" element={<Enterprises />} />
-      <Route path="/insurance" element={<Insurance />} />
-      <Route path="/real-estate" element={<RealEstate />} />
-      <Route path="/administrative-support" element={<AdministrativeSupport />} />
-      <Route path="/schools" element={<Schools />} />
-      <Route path="/health-care" element={<HealthCare />} />
-      <Route path="/art-entertainment" element={<Entertainment />} />
-      <Route path="/accommodation" element={<Accommodations />} />
-      <Route path="/other-services" element={<OtherServices />} />
-      <Route path="/agencies" element={<Agencies />} />
-      <Route path="/careers" element={<Careers />} />
       
-
-      <Route path="/business" element={<BusinessPages />} />
 
       <Route path="/air-pod" element={<AirPods />} />
       <Route path="/apple" element={<Apple />} />
