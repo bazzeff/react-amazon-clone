@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { auth, logInWithEmailAndPassword, signInWithGoogle,  
     signInWithFacebook,
     signInWithApple,
-    signInWithTwitter, } from "./firebase";
+    signInWithTwitter } from "./firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import {useTranslation} from "react-i18next";
 
